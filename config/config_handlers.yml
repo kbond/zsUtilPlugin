@@ -1,0 +1,6 @@
+config/thumbnails.yml:
+  file: %SF_PLUGINS_DIR%/zsUtilPlugin/lib/config/zsThumbConfigHandler.class.php
+  class: zsThumbConfigHandler
+config/search.yml:
+  file: %SF_PLUGINS_DIR%/zsUtilPlugin/lib/config/zsSearchConfigHandler.class.php
+  class: zsSearchConfigHandler

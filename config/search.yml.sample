@@ -1,0 +1,21 @@
+MyIndex:
+  models:
+    zsBlogArticle:
+      title:  title
+      description: description
+      route:  zs_blog_article
+      fields:
+        title:  ~
+        content:  ~
+
+    zsBlogTag:
+      title:  name
+      fields:
+        name: ~
+
+AnotherIndex:
+  models:
+    zsBlogArticle:
+      title:  title
+      fields:
+        title:  ~

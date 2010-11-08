@@ -1,0 +1,12 @@
+all:
+  # Required for zsThumb
+  sfImageTransformPlugin:
+    mime_type:
+      auto_detect: true
+
+  zsUtilPlugin:
+    zsThumb:
+      enabled:        true
+      delete_with_cc: false
+    zsSearch:
+      max_results:    20

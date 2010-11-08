@@ -1,0 +1,3 @@
+sizes:
+  sm: { width: 100, height: 100, method: center, quality: 100 }
+  md: { width: 200, height: 200 }
