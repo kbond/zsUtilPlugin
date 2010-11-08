@@ -62,6 +62,9 @@ class zsMarkdownDocument extends zsDocument
     // disable links on PHP functions, HTML tags, ...
     $geshi->enable_keyword_links(false);
 
-    return @$geshi->parse_code();
+    $ret = @$geshi->parse_code();
+
+    //fix extra space at bottom
+    return str_replace("&nbsp;</pre>", "</pre>", $ret);
   }
 }

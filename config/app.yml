@@ -6,7 +6,7 @@ all:
 
   zsUtilPlugin:
     zsThumb:
-      enabled:        true
+      enabled:        false
       delete_with_cc: false
     zsSearch:
       max_results:    20

@@ -19,6 +19,11 @@ class zsDocument
     return (string)$this->render();
   }
 
+  public function hasContent()
+  {
+    return (bool) strlen($this->newContent);
+  }
+
   public function render()
   {
     return $this->newContent;
@@ -77,6 +82,15 @@ class zsDocument
     // ...<p><!-- pagebreak -->...
     if (preg_match('/(.+)<[^\/<]+?>'.$seperator.'/s', $this->newContent, $matches))
       return $this->setNewContent($matches[1]);
+
+    return $this;
+  }
+
+  public function xmlEscape()
+  {
+    $text = $this->newContent;
+    $text = str_replace('&nbsp;', ' ', $text);
+    $this->newContent = $text;
 
     return $this;
   }
